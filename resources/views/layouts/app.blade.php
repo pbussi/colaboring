@@ -2,21 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Colaboring - Ingeniería Colaborativa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bootstrap 3 template for corporate business" />
-    <!-- css -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('plugins/flexslider/flexslider.css') }}" rel="stylesheet" media="screen" />
-    <link href="{{ asset('css/cubeportfolio.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158794026-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- Theme skin -->
-    <link id="t-colors" href="{{ asset('skins/default.css') }}" rel="stylesheet" />
+      gtag('config', 'UA-158794026-1');
+  </script>
 
-    <!-- boxed bg -->
-    <link id="bodybg" href="{{ asset('bodybg/bg1.css" rel="stylesheet') }}" type="text/css" />
+  <meta charset="utf-8">
+  <title>Colaboring - Ingeniería Colaborativa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bootstrap 3 template for corporate business" />
+  <!-- css -->
+  <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
+  <link href="{{ asset('plugins/flexslider/flexslider.css') }}" rel="stylesheet" media="screen" />
+  <link href="{{ asset('css/cubeportfolio.min.css') }}" rel="stylesheet" />
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+
+  <!-- Theme skin -->
+  <link id="t-colors" href="{{ asset('skins/default.css') }}" rel="stylesheet" />
+
+  <!-- boxed bg -->
+  <link id="bodybg" href="{{ asset('bodybg/bg1.css" rel="stylesheet') }}" type="text/css" />
 
     <!-- =======================================================
     Theme Name: Sailor
@@ -65,15 +75,8 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Servicios <i class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Industrial</a></li>
-                                <li><a href="#">Sistemas</a></li>
-                                <li><a href="#">Civil</a></li>
-                            </ul>
-                        </li>
+                        <li class="active"><a href="{{url('/')}}">Home</a></li>
+                        <li><a href="{{url('portfolio')}}">Portfolio</a></li>
 
                         <li class="dropdown"><a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Nosotros <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
